@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ── Page layout ── */
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── Logo ── */
+.logo {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 160px;
+  height: auto;
+}
+
+/* ── Search ── */
+.searchWrapper {
+  margin-bottom: 1.8rem;
+}
+
+.searchWrapper input {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .95rem;
+  font-weight: 300;
+  color: #1a1a2e;
+  background: #ffffff;
+  border: 1.5px solid #e8e8f0;
+  border-radius: 10px;
+  padding: .7rem 1rem .7rem 2.4rem;
+  outline: none;
+  transition: border-color .25s, box-shadow .25s;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23aaa' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.868-3.833zm-5.242 1.156a5 5 0 1 1 0-10 5 5 0 0 1 0 10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: .75rem center;
+}
+
+.searchWrapper input:focus {
+  border-color: #6a5cff;
+  box-shadow: 0 0 0 3px rgba(106, 92, 255, .12);
+}
+
+/* ── Section heading ── */
+.sectionTitle {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #6a5cff;
+  margin: 0 0 .8rem;
+}
+
+/* ── Task list ── */
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Task item ── */
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #ffffff;
+  border: 1px solid #ece9ff;
+  border-radius: 12px;
+  padding: .9rem 1.1rem;
+  box-shadow: 0 4px 16px rgba(106, 92, 255, 0.22);
+  transition: box-shadow .2s, transform .2s;
+}
+
+.taskItem:hover {
+  box-shadow: 0 4px 16px rgba(106, 92, 255, 0.13);
+  transform: translateY(-1px);
+}
+
+/* ── Time badge ── */
+.timeBadge {
+  flex-shrink: 0;
+  font-size: .75rem;
+  font-weight: 500;
+  color: #6a5cff;
+  background: #f0eeff;
+  border-radius: 6px;
+  padding: .25rem .55rem;
+  min-width: 44px;
+  text-align: center;
+}
+
+/* ── Task title ── */
+.taskTitle {
+  font-size: .95rem;
+  font-weight: 400;
+  color: #1a1a2e;
+  flex: 1;
+}
+
+/* ── Actions placeholder (for future edit/delete buttons) ── */
+.taskActions {
+  display: flex;
+  gap: .5rem;
+  /* buttons will go here later */
+}
+
+/* ── YouTube embed ── */
+.videoWrapper {
+  margin-top: 2.5rem;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(106, 92, 255, 0.12);
+  aspect-ratio: 16 / 9;
+}
+
+.videoWrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}

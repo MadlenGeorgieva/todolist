@@ -1,0 +1,75 @@
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #ffffff;
+  border: 1px solid #ece9ff;
+  border-radius: 12px;
+  padding: .9rem 1.1rem;
+  box-shadow: 0 4px 16px rgba(106, 92, 255, 0.22);
+  transition: box-shadow .2s, transform .2s;
+}
+
+.taskItem:hover {
+  box-shadow: 0 4px 16px rgba(106, 92, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+.timeBadge {
+  flex-shrink: 0;
+  font-size: .75rem;
+  font-weight: 500;
+  color: #6a5cff;
+  background: #f0eeff;
+  border-radius: 6px;
+  padding: .25rem .55rem;
+  min-width: 44px;
+  text-align: center;
+}
+
+.taskTitle {
+  font-size: .95rem;
+  font-weight: 400;
+  color: #1a1a2e;
+  flex: 1;
+}
+
+.taskActions {
+  display: flex;
+  gap: .5rem;
+}
+
+.editBtn {
+  font-size: .8rem;
+  font-weight: 500;
+  color: #6a5cff;
+  border: 1.5px solid #6a5cff;
+  border-radius: 6px;
+  padding: .25rem .65rem;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.editBtn:hover {
+  background-color: #6a5cff;
+  color: white;
+}
+
+.deleteBtn {
+  font-size: .8rem;
+  font-weight: 500;
+  color: #ff4d4d;
+  background: transparent;
+  border: 1.5px solid #ff4d4d;
+  border-radius: 6px;
+  padding: .25rem .65rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.deleteBtn:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
